@@ -1,0 +1,6 @@
+*.user
+
+/src/.vs
+/src/packages
+/src/Grenitaus.Consulting.Web/bin
+/src/Grenitaus.Consulting.Web/obj
