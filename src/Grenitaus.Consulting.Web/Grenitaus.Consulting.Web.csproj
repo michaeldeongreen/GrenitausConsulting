@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.html" />
     <Content Include="images\320x220.png" />
     <Content Include="images\60x60.png" />
     <Content Include="images\avatar.png" />
@@ -78,6 +79,7 @@
     <Content Include="images\gallery\01.png" />
     <Content Include="images\imgl.gif" />
     <Content Include="images\imgr.gif" />
+    <Content Include="images\michael-d-green.jpg" />
     <Content Include="index.html" />
     <Content Include="scripts\jquery.backtotop.js" />
     <Content Include="scripts\jquery.min.js" />
@@ -101,20 +103,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="pages\basic-grid.html" />
-    <Content Include="pages\full-width.html" />
-    <Content Include="pages\gallery.html" />
-    <Content Include="pages\index.html" />
-    <Content Include="pages\sidebar-left.html" />
-    <Content Include="pages\sidebar-right.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Template\pcomspace\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
