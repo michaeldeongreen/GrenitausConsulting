@@ -1,6 +1,12 @@
 *.user
+*.log
+/src/Grenitaus.Consulting.Web/main.js
+/src/Grenitaus.Consulting.Web/main.js.map
+
 
 /src/.vs
 /src/packages
 /src/Grenitaus.Consulting.Web/bin
 /src/Grenitaus.Consulting.Web/obj
+/src/Grenitaus.Consulting.Web/node_modules
+/src/Grenitaus.Consulting.Web/app/*.js
