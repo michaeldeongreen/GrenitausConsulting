@@ -1,8 +1,8 @@
 *.user
 *.log
-/src/Grenitaus.Consulting.Web/main.js
-/src/Grenitaus.Consulting.Web/main.js.map
+*.map
 
+/src/Grenitaus.Consulting.Web/main.js
 
 /src/.vs
 /src/packages

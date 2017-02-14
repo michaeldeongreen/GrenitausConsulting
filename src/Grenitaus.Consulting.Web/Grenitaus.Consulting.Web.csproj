@@ -71,6 +71,7 @@
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
+    <Content Include="app\templates\app.component.html" />
     <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
     <Content Include="styles\fontawesome-4.6.3.min.css" />
     <Content Include="styles\framework.css" />
