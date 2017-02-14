@@ -10,3 +10,5 @@
 /src/Grenitaus.Consulting.Web/obj
 /src/Grenitaus.Consulting.Web/node_modules
 /src/Grenitaus.Consulting.Web/app/*.js
+/src/Grenitaus.Consulting.Web/app/components/*.js
+/src/Grenitaus.Consulting.Web/app/modules/*.js
