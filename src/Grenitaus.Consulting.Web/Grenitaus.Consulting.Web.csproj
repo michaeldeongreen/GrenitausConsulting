@@ -68,11 +68,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\templates\footer.component.html" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <Content Include="app\templates\app.component.html" />
     <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
+    <Content Include="scripts\jquery.backtotop.js" />
+    <Content Include="scripts\jquery.min.js" />
+    <Content Include="scripts\jquery.mobilemenu.js" />
     <Content Include="styles\fontawesome-4.6.3.min.css" />
     <Content Include="styles\framework.css" />
     <Content Include="styles\layout.css" />
@@ -92,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\components\app.component.ts" />
+    <TypeScriptCompile Include="app\components\footer.component.ts" />
     <TypeScriptCompile Include="app\modules\app.module.ts" />
     <TypeScriptCompile Include="main.ts" />
   </ItemGroup>
