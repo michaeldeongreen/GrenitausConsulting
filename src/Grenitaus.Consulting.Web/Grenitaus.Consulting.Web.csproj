@@ -69,10 +69,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\templates\footer.component.html" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <Content Include="app\templates\app.component.html" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
     <Content Include="scripts\jquery.backtotop.js" />
     <Content Include="scripts\jquery.min.js" />
@@ -104,7 +110,6 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="fonts\" />
     <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>
