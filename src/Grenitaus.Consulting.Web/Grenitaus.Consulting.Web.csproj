@@ -71,6 +71,7 @@
     <Content Include="app\templates\about.component.html" />
     <Content Include="app\templates\footer.component.html" />
     <Content Include="app\templates\header.component.html" />
+    <Content Include="app\templates\home.component.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="images\320x220.png" />
     <Content Include="images\60x60.png" />
@@ -120,6 +121,8 @@
     <TypeScriptCompile Include="app\components\app.component.ts" />
     <TypeScriptCompile Include="app\components\footer.component.ts" />
     <TypeScriptCompile Include="app\components\header.component.ts" />
+    <TypeScriptCompile Include="app\components\home.component.ts" />
+    <TypeScriptCompile Include="app\modules\app-routing.module.ts" />
     <TypeScriptCompile Include="app\modules\app.module.ts" />
     <TypeScriptCompile Include="main.ts" />
   </ItemGroup>
