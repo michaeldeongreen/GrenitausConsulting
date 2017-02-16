@@ -6,9 +6,10 @@
             </div>
             <nav id="mainav" class="fl_right">
                 <ul class="clear">
-                    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+                    <!--http://stackoverflow.com/questions/34323480/in-angular-2-how-do-you-determine-the-active-route-->
+                    <li [routerLinkActive]="['active']"><a routerLink="/home" routerLinkActive="active">Home</a></li>
                     <li><a href="http://blog.grenitausconsulting.com">Blog</a></li>
-                    <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+                    <li [routerLinkActive]="['active']"><a routerLink="/about" routerLinkActive="active">About Us</a></li>
                 </ul>
             </nav>
         </header>
