@@ -83,9 +83,9 @@
     <Content Include="src\scripts\jquery.min.js" />
     <Content Include="src\scripts\jquery.mobilemenu.js" />
     <Content Include="src\assets\.gitkeep" />
-    <Content Include="src\styles\fontawesome-4.6.3.min.css" />
+    <Content Include="src\fontawesome-4.6.3.min.css" />
     <Content Include="src\fonts\fontawesome-webfont.svg" />
-    <Content Include="src\styles\framework.css" />
+    <Content Include="src\framework.css" />
     <Content Include="src\tsconfig.json" />
     <Content Include="src\fonts\fontawesome-webfont.eot" />
     <Content Include="src\fonts\fontawesome-webfont.ttf" />
