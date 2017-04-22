@@ -8,19 +8,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-export var HeaderComponent = (function () {
+var HeaderComponent = (function () {
     function HeaderComponent() {
     }
     HeaderComponent.prototype.ngOnInit = function () {
     };
-    HeaderComponent = __decorate([
-        Component({
-            selector: 'app-header',
-            templateUrl: './header.component.html',
-            styleUrls: ['./header.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HeaderComponent);
     return HeaderComponent;
 }());
+HeaderComponent = __decorate([
+    Component({
+        selector: 'app-header',
+        templateUrl: './header.component.html',
+        styleUrls: ['./header.component.css']
+    }),
+    __metadata("design:paramtypes", [])
+], HeaderComponent);
+export { HeaderComponent };
 //# sourceMappingURL=C:/Git/GrenitausConsulting/src/Grenitaus.Consulting.Web/src/app/header/header.component.js.map

@@ -8,19 +8,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-export var FooterComponent = (function () {
+var FooterComponent = (function () {
     function FooterComponent() {
     }
     FooterComponent.prototype.ngOnInit = function () {
     };
-    FooterComponent = __decorate([
-        Component({
-            selector: 'app-footer',
-            templateUrl: './footer.component.html',
-            styleUrls: ['./footer.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], FooterComponent);
     return FooterComponent;
 }());
+FooterComponent = __decorate([
+    Component({
+        selector: 'app-footer',
+        templateUrl: './footer.component.html',
+        styleUrls: ['./footer.component.css']
+    }),
+    __metadata("design:paramtypes", [])
+], FooterComponent);
+export { FooterComponent };
 //# sourceMappingURL=C:/Git/GrenitausConsulting/src/Grenitaus.Consulting.Web/src/app/footer/footer.component.js.map

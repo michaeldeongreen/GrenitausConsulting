@@ -8,19 +8,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-export var AboutComponent = (function () {
+var AboutComponent = (function () {
     function AboutComponent() {
     }
     AboutComponent.prototype.ngOnInit = function () {
     };
-    AboutComponent = __decorate([
-        Component({
-            selector: 'app-about',
-            templateUrl: './about.component.html',
-            styleUrls: ['./about.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AboutComponent);
     return AboutComponent;
 }());
+AboutComponent = __decorate([
+    Component({
+        selector: 'app-about',
+        templateUrl: './about.component.html',
+        styleUrls: ['./about.component.css']
+    }),
+    __metadata("design:paramtypes", [])
+], AboutComponent);
+export { AboutComponent };
 //# sourceMappingURL=C:/Git/GrenitausConsulting/src/Grenitaus.Consulting.Web/src/app/about/about.component.js.map

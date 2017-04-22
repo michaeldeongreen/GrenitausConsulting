@@ -8,19 +8,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-export var HomeComponent = (function () {
+var HomeComponent = (function () {
     function HomeComponent() {
     }
     HomeComponent.prototype.ngOnInit = function () {
     };
-    HomeComponent = __decorate([
-        Component({
-            selector: 'app-home',
-            templateUrl: './home.component.html',
-            styleUrls: ['./home.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HomeComponent);
     return HomeComponent;
 }());
+HomeComponent = __decorate([
+    Component({
+        selector: 'app-home',
+        templateUrl: './home.component.html',
+        styleUrls: ['./home.component.css']
+    }),
+    __metadata("design:paramtypes", [])
+], HomeComponent);
+export { HomeComponent };
 //# sourceMappingURL=C:/Git/GrenitausConsulting/src/Grenitaus.Consulting.Web/src/app/home/home.component.js.map
