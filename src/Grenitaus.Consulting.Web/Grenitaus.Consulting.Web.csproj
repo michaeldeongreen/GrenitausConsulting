@@ -70,7 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json" />
-    <Content Include=".angular-cli.json" />
     <Content Include="packages.config" />
     <Content Include="angular.json" />
     <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
