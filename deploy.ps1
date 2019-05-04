@@ -29,7 +29,7 @@ param(
 )
 
 # Initialize variables
-$webclientZipFile = "$dropdirectory\webclient.zip"
+$webclientZipFile = "$dropdirectory/webclient.zip"
 
 # Login via Service Principal
 az login --service-principal --username $username --password $password --tenant $tenant
