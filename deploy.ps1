@@ -9,28 +9,22 @@ Parameters are:
 * $dropdirectory: Release Pipeline Drop Directory
 #>
 param(
-    [Parameter()]
-    [ValidateNotNullOrEmpty]
+    [Parameter(Mandatory=$true)]
     [string]$username=$(throw "username is mandatory"),
 
-    [Parameter()]
-    [ValidateNotNullOrEmpty]
+    [Parameter(Mandatory=$true)]
     [string]$password=$(throw "password is mandatory"),
 
-    [Parameter()]
-    [ValidateNotNullOrEmpty]
+    [Parameter(Mandatory=$true)]
     [string]$tenant=$(throw "tenant is mandatory"),
 
-    [Parameter()]
-    [ValidateNotNullOrEmpty]
+    [Parameter(Mandatory=$true)]
     [string]$resourcegroup=$(throw "resourcegroup is mandatory"),
 
-    [Parameter()]
-    [ValidateNotNullOrEmpty]
+    [Parameter(Mandatory=$true)]
     [string]$webclientname=$(throw "webclientname is mandatory"),
 
-    [Parameter()]
-    [ValidateNotNullOrEmpty]
+    [Parameter(Mandatory=$true)]
     [string]$dropdirectory=$(throw "dropdirectory is mandatory")
 )
 
