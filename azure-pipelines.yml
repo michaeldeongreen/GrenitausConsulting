@@ -1,0 +1,41 @@
+pool:
+    vmImage: 'ubuntu-16.04'
+
+variables:
+    buildConfiguration: 'Release'
+
+steps:
+# Install all npm package dependencies for the angular web client
+- script: npm ci
+  workingDirectory: '$(System.DefaultWorkingDirectory)\WebClient'
+  displayName: 'Install npm packages dependencies'
+
+# Build the angular web client
+- script: npx ng build --prod
+  workingDirectory: '$(System.DefaultWorkingDirectory)\WebClient'
+  displayName: 'Build WebClient'
+
+# Find the newly created dist folder with web client artifacts zip them to artifacts staging for release pipeline
+- task: ArchiveFiles@2
+  displayName: 'Zip WebClient Artifacts'
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)\WebClient\dist'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)\webclient.zip'
+
+# Copy the deploy.ps1 Powershell script into the artifacts directory for the release pipleline
+- task: CopyFiles@2
+  displayName: 'Copy Powershell scripts to Artifacts Directory'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: |
+     **/*.ps1
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+# Publish build artifacts
+# Should have:
+# webclient.zip
+# deploy.ps1
+- task: PublishBuildArtifacts@1
+  displayName: 'Step 14 - Publish Build Artifacts'
