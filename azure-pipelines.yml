@@ -7,19 +7,19 @@ variables:
 steps:
 # Install all npm package dependencies for the angular web client
 - script: npm ci
-  workingDirectory: '$(System.DefaultWorkingDirectory)/WebClient'
+  workingDirectory: '$(System.DefaultWorkingDirectory)'
   displayName: 'Install npm packages dependencies'
 
 # Build the angular web client
 - script: npx ng build --prod
-  workingDirectory: '$(System.DefaultWorkingDirectory)/WebClient'
+  workingDirectory: '$(System.DefaultWorkingDirectory)'
   displayName: 'Build WebClient'
 
 # Find the newly created dist folder with web client artifacts zip them to artifacts staging for release pipeline
 - task: ArchiveFiles@2
   displayName: 'Zip WebClient Artifacts'
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/WebClient/dist'
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/dist'
     includeRootFolder: false
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/webclient.zip'
