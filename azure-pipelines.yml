@@ -2,7 +2,6 @@ trigger:
   branches:
     include:
     - master
-    - develop
 
 variables:
     buildConfiguration: 'Release'
@@ -34,6 +33,13 @@ stages:
         includeRootFolder: false
         archiveType: 'zip'
         archiveFile: '$(Build.ArtifactStagingDirectory)/webclient.zip'
+
+    # Publish build artifacts
+    # Should have:
+    # webapi.zip
+    # webclient.zip
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Build Artifacts'        
 
 - stage: Release
   displayName: "Push to Production"
