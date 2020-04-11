@@ -3,41 +3,41 @@ on:
     branches:
       - develop
   
-name: 'Build & Deploy Workflow'      
+name: 'Build & Deploy Workflow'
 
-  env:
-    AZURE_WEBAPP_PACKAGE_PATH: './dist'
-    NODE_VERSION: '13.12.0'
+env:
+  AZURE_WEBAPP_PACKAGE_PATH: './dist'
+  NODE_VERSION: '13.12.0'    
   
-  jobs:
-    build-and-deploy:
-      name: 'Build & Deploy'
-      runs-on: ubuntu-latest
+jobs:
+build-and-deploy:
+    name: 'Build & Deploy'
+    runs-on: ubuntu-latest
 
-      steps:
-      - name: 'Checkout Repository'
-      - uses: actions/checkout@v2
-        with:
-          repository: 'develop'
+    steps:
+    - name: 'Checkout Repository'
+      uses: actions/checkout@v2
+      with:
+        repository: 'develop'
 
-      - name: 'Login via Azure CLI'
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}          
+    - name: 'Login via Azure CLI'
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}          
 
-      - name: 'Use Node.js ${{ env.NODE_VERSION }}'
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ env.NODE_VERSION }}
+    - name: 'Use Node.js ${{ env.NODE_VERSION }}'
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ env.NODE_VERSION }}
 
-      - name: 'npm ci & build'
-        run: |
-          npm ci
-          npx ng build --prod
+    - name: 'npm ci & build'
+      run: |
+        npm ci
+        npx ng build --prod
 
-      - name: 'Deploy to Azure WebApp'
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+    - name: 'Deploy to Azure WebApp'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
+        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
   
