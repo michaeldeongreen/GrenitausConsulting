@@ -1,7 +1,8 @@
-trigger:
-  branches:
-    include:
-    - master
+# Decommissioned on 2020/04/11. Now using GitHub Actions
+trigger: none
+  #branches:
+    #include:
+    #- master
 
 variables:
     buildConfiguration: 'Release'

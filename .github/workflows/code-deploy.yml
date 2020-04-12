@@ -5,7 +5,7 @@
 on:
   push:
     branches:
-      - develop
+      - master
   
 name: 'Build & Deploy Workflow'
 
@@ -22,7 +22,7 @@ jobs:
     - name: 'Checkout Repository'
       uses: actions/checkout@master
       with:
-        ref: refs/heads/develop
+        ref: refs/heads/master
 
     - name: 'Login via Azure CLI'
       uses: azure/login@v1
