@@ -1,3 +1,7 @@
+##################################################################################################
+# Name: Build & Deploy Workflow
+# Descripton: GitHub Action Workflow used to build and deploy the GrenitausConsulting.com Website.
+##################################################################################################
 on:
   push:
     branches:
@@ -39,7 +43,7 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: webclient
-        path: ./dist     
+        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
