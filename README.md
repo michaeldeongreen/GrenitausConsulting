@@ -2,5 +2,5 @@
 
 # GrenitausConsulting LLC Website
 
-This repository contains the source code, Azure Pipelines & GitHub Action Workflows for the [https://grenitausconsulting.com](Grenitaus Consulting) website.
+This repository contains the source code, Azure Pipelines & GitHub Action Workflows for the [Grenitaus Consulting](https://grenitausconsulting.com) website.
 
