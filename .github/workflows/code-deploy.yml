@@ -10,7 +10,7 @@ env:
   NODE_VERSION: '13.12.0'    
   
 jobs:
-build-and-deploy:
+  build-and-deploy:
     name: 'Build & Deploy'
     runs-on: ubuntu-latest
 
